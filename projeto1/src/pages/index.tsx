@@ -1,6 +1,6 @@
 // import Image from "next/image";
 // import localFont from "next/font/local";
-
+import Topo from "@/components/Topo";
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
 //   variable: "--font-geist-sans",
@@ -11,27 +11,27 @@
 //   variable: "--font-geist-mono",
 //   weight: "100 900",
 // });
-const nome = "mateus";
-const idade = 18;
 
-const Topo = () => //componetes tem letra maiuscula
-{
-  return (
-    <div className="flex justify-between">
-        <div>CR7</div>
-        <div>{nome}</div>
-        <div>{idade}</div>
-    </div>
-  );
-}
+
+
 
 //função padrão home
 export default function Home() {
 
   return (   
       <div>
-          <Topo/>
+           <Topo/> 
+          <div style={style}>
+            meio
+          </div>
       </div>
       
   );
+}
+
+const style = {
+  display : "flex",
+  justifyContent : "Center",
+  alingItems : "Center",
+  color : "#f00"
 }
