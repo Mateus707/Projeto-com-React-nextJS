@@ -26,9 +26,10 @@ export default function Home() {
             meio
           </div>
          <div className="flex justify-center gap-3">
-            <Card produto={"Mouse"} valor={"R$ 40,00"}/>
-            <Card produto={"Teclado"} valor={"R$ 120,00"}/>
-            <Card produto={"Monitor"} valor={"R$ 469,99"}/>
+            <Card produto={"Mouse"} valor={40.00} desconto={10}/>
+            <Card produto={"Teclado"} valor={120.00} desconto={10}/>
+            <Card produto={"Monitor"} valor={469.99} desconto={10}/>
+            <Card produto={"CPU"} valor={699.99} desconto={10}/>
          </div>
       </div>
       
