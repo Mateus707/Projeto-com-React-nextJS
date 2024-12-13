@@ -2,7 +2,8 @@ interface CardProps{
     produto:string,
     valor:number,
     desconto:number,
-    functionDesconto:any
+    functionDesconto:any,
+    children:any
     
 }
 
@@ -19,6 +20,9 @@ export default function Card(props:CardProps){
                     <div>Valor com Desconto : {props.functionDesconto(props.valor,props.desconto)}</div>
                 </div>
             )}
+            <div>
+                {props.children}
+            </div>
                 
         </div>
     )

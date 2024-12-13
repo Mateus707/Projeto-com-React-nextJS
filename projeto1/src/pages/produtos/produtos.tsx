@@ -42,12 +42,17 @@ const produtos = [
 
 export default function produtosPagina(){
   const router = useRouter(); 
-  const params = router.query;
-  const nome =  router.query.nome;
-  const curso =  router.query.Curso;
-  console.log(params);
+  // const params = router.query;
+  // const nome =  router.query.nome;
+  // const curso =  router.query.Curso;
+  // console.log(params);
+  // console.log(nome);
+  // console.log(curso);
+  // ou
+
+  const {nome,Curso} = router.query;
   console.log(nome);
-  console.log(curso);
+  console.log(Curso);
     return (
      <div>
       <Topo/>
@@ -55,11 +60,13 @@ export default function produtosPagina(){
          {produtos.map((e:any)=>{
                 if(e.disponivel){
                   return (
-                    <Card key={e.id} produto={e.produto} valor={e.valor} desconto={e.desconto} functionDesconto={functionDesconto}/>
+                  <Card key={e.id} produto={e.produto} valor={e.valor} desconto={e.desconto} functionDesconto={functionDesconto}>
+                    Teste Children
+                  </Card>
                   );
                 }
             }
-            )};
+            )}
          </div>
      </div> 
     )
