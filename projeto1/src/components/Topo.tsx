@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+
 export default function Topo(){//componetes tem letra maiuscula
     return (
         <div className="flex justify-between items-center bg-zinc-400 h-[100px]">
@@ -9,9 +10,14 @@ export default function Topo(){//componetes tem letra maiuscula
               <div className="subTitle">Curso de React</div>
             </div>
               <nav className="flex flex-col">
-                 <Link href={"/produtos/produtos"}>Produtos</Link>
+                 <Link href={
+                      {
+                        pathname:"/produtos/produtos",
+                        query:{nome:"Mateus",Curso:"React next"}
+                      }
+                  }>Produtos</Link>
                  <Link href={"/teste/teste"}>Teste</Link>
-                 <Link href={"/index"}>Home</Link>
+                 <Link href={"/"}>Home</Link>
               </nav>
         </div>
       );
