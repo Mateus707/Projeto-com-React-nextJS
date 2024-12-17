@@ -9,7 +9,7 @@ export default function Topo(){//componetes tem letra maiuscula
               <div className="text-2xl ">Mateus</div>
               <div className="subTitle">Curso de React</div>
             </div>
-              <nav className="flex flex-col">
+              <nav className="flex flex-col gap-3">
                  <Link href={
                       {
                         pathname:"/produtos/produtos",
@@ -17,7 +17,7 @@ export default function Topo(){//componetes tem letra maiuscula
                       }
                   }>Produtos</Link>
                  <Link href={"/teste/teste"}>Teste</Link>
-                 <Link href={"/"}>Home</Link>
+                 <Link href={"/Hooks/useStates"}>State</Link>
               </nav>
         </div>
       );
