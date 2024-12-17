@@ -5,3 +5,11 @@
 
 
 
+.btnPadrao{
+    display: flex;
+    background-color: bisque;
+    padding: 10;
+    border-radius: 10;
+    width: 80;
+    text-align: center;
+}
